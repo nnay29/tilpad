@@ -1,8 +1,16 @@
 
+
 .task-card-container{
-    /* background-color: red */
+    display: flex;
+    justify-content: space-between;
+    
+}
+.task-card{
+    background-color: rgb(146, 172, 159);
     display: inline-block;
-    padding-inline-start: 20px;
+    padding-inline-start: 15px;
+    padding-right: 85px;
+    
 }
 
 .day-of-week{
