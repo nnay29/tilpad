@@ -1,14 +1,14 @@
 import TaskCard from './components/TaskCard'
+import UpperPart from './components/UpperPart'
 import './App.css'
 
 function App() {
 
   
-  
-
   return (
     <>
-       <TaskCard />
+      <UpperPart/>
+      <TaskCard />
     </>
   )
 }
