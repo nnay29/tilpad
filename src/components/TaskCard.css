@@ -1,0 +1,10 @@
+
+.task-card-container{
+    /* background-color: red */
+    display: inline-block;
+    padding-inline-start: 20px;
+}
+
+.day-of-week{
+    color: rgb(190, 190, 190);
+}

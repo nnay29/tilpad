@@ -1,12 +1,14 @@
-
+import TaskCard from './components/TaskCard'
 import './App.css'
 
 function App() {
+
+  
   
 
   return (
     <>
-       <p>Billie Jean is not my lover</p>
+       <TaskCard />
     </>
   )
 }
