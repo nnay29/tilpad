@@ -1,6 +1,7 @@
 import TaskCard from './components/TaskCard'
 import UpperPart from './components/UpperPart'
 import './App.css'
+import TaskCardBlock from './components/TaskCardBlock'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <UpperPart/>
-      <TaskCard />
+      <TaskCardBlock />
     </>
   )
 }
