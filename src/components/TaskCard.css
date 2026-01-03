@@ -2,6 +2,10 @@ body{
     background-color:  #fdeefd;
 }
 
+*{
+    font-family:  "Comic Sans MS", cursive;
+}
+
 .task-card-container{
     display: flex;
     justify-content: space-between;
