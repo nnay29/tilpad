@@ -14,8 +14,8 @@ export default function TaskCardBlock() {
               " Profit $$$",];
   return (
     <div className="task-card-container">
-      {daysOfWeek.map((day) => (
-        TaskCard({tasks, cardDate: day})
+      {daysOfWeek.map((day,index) => (
+        TaskCard({tasks, cardDate: day,index})
 
 
                   ))

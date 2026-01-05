@@ -2,14 +2,14 @@
 import './TaskCard.css'
 import '../index.css'
 
-function TaskCard({tasks, cardDate}) {
+function TaskCard({tasks, cardDate,index}) {
 //    const daysOfWeek = getDatesOfWeek();
 
     return (
-        <>
+        // <>
           
               
-                    <div className="task-card">
+                    <div className="task-card" key={index}>
                     <h2> <span className="day-of-week">{cardDate.format('ddd')}</span> {cardDate.format('DD MMM')} </h2>
                     <hr />
 
@@ -23,7 +23,7 @@ function TaskCard({tasks, cardDate}) {
                     
                     </div>
                 
-        </>
+        
 
     )
 }
