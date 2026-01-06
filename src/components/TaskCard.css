@@ -1,4 +1,10 @@
+body{
+    background-color:  #fdeefd;
+}
 
+*{
+    font-family:  "Comic Sans MS", cursive;
+}
 
 .task-card-container{
     display: flex;
@@ -6,13 +12,20 @@
     
 }
 .task-card{
-    background-color: rgb(146, 172, 159);
+    background-color: #dfafef;
     display: inline-block;
     padding-inline-start: 15px;
     padding-right: 85px;
+
+    border-radius: 10px;
+    /* border-top-right-radius: 50px; 
+        Use this syntax to fold the current day
+        May be it is time to switch to TainwindCSS
     
+    */ 
 }
 
 .day-of-week{
-    color: rgb(190, 190, 190);
+    color: rgb(129,129,129);
+   
 }
