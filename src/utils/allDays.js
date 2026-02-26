@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
-import isoWeek from 'dayjs/plugin/isoWeek.js';
+import isoWeek from 'dayjs/plugin/isoWeek.js'; // Dayjs plugin that enebles to have our weeks start on Mondays rather than fridays
 
 
 dayjs.extend(isoWeek);
@@ -26,9 +26,7 @@ export function getDatesOfWeek() {
 
 //returns month of the first day of that week.
 //this ensures uniformity in display in case month changes in the same week
-
+//i.e Month ends on Wednesday and next debutes on Thursday. So the same week contains two months. We display the first one.
 export function monthOfWeek(){
   return startOfWeek.format("MMMM YYYY");
 }
-
-getDatesOfWeek();

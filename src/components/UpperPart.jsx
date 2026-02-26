@@ -9,12 +9,12 @@ function UpperPart(){
     const handleLeftClick = () => {
          
         setdatePos(datePos - 1);
-        // console.log(datePos);
+        console.log(datePos);
     }
     const handleRightClick = () => {
          
         setdatePos(datePos + 1);
-        // console.log(datePos);
+         console.log(datePos);
     }
 
     const currentMonthYear = monthOfWeek(); //use monthOfWeek rather than direct call
