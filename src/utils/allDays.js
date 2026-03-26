@@ -5,21 +5,22 @@ import isoWeek from 'dayjs/plugin/isoWeek.js'; // Dayjs plugin that enebles to h
 dayjs.extend(isoWeek); //telling Dayjs to load the plugin so it can be used
 let startOfWeek = dayjs().startOf("isoWeek"); // isoWeek to start on Monday
 
-export function getDatesOfWeek() {
+export function getDatesOfWeek(weekShift) { // weekShift tracks moving forward/backward from the current week
+  const startOfWeek = dayjs().startOf("isoWeek").add(weekShift, 'week'); // Explanation : 
   const daysOfWeek = [];
 
   
   //console.log(startOfWeek.format("DD-MM-YYYY"));
+ 
 
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0 ; i < 7; i++) {
     
     daysOfWeek.push(startOfWeek.add(i,'day'));
     //console.log(startOfWeek.add(i,'day').format("dddd DD MMMM YYYY"));
-
   }
 
 
-  //console.log(daysOfWeek);
+  console.log(daysOfWeek);
   //returns an array of dayjs objects of all the days of the week starting from monday
   return daysOfWeek;
 }
@@ -27,6 +28,6 @@ export function getDatesOfWeek() {
 //returns month of the first day of that week.
 //this ensures uniformity in display in case month changes in the same week
 //i.e Month ends on Wednesday and next debutes on Thursday. So the same week contains two months. We display the first one. The month on which the week debuted
-export function monthOfWeek(){
-  return startOfWeek.format("MMMM YYYY");
+export function monthOfWeek(weekShift){ // weekShift tracks moving forward/backward from the current week
+  return startOfWeek.add(weekShift, 'week').format("MMMM YYYY");
 }
