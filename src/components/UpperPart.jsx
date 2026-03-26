@@ -1,26 +1,28 @@
 
 import { monthOfWeek } from "../utils/allDays";
-import { useState } from "react";
+//import { useState } from "react";
 
 import NavigationButton from "./NavigationButton.jsx";
-function UpperPart(){
-    const [datePos, setdatePos] = useState(0);
+function UpperPart({weekShift, setWeekShift}){ // weekShift and setWeekShift are props received from App.jsx
+    
 
     const handleLeftClick = () => {
-         
-        setdatePos(datePos - 1);
-        console.log(datePos);
+        
+        console.log(weekShift);
+        setWeekShift(weekShift - 1);
+        
     }
     const handleRightClick = () => {
          
-        setdatePos(datePos + 1);
-         console.log(datePos);
+        console.log(weekShift);
+        setWeekShift(weekShift + 1);
+         
     }
 
-    const currentMonthYear = monthOfWeek(); //use monthOfWeek rather than direct call
+    const currentMonthYear = monthOfWeek(weekShift); //use monthOfWeek rather than direct call
     return(
         <>
-        {console.log(`current datePos: ${datePos}`)}
+        {console.log(`current weekShift: ${weekShift}`)}
         <div className="upper-part-container">
             <h1>{currentMonthYear}</h1>
         </div>
