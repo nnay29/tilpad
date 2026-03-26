@@ -1,13 +1,7 @@
-### TILpad: Today I Learned pad
+# TILpad: Today I Learned pad
 
 A minimalist weekly planning tool inspired by [Tweek](https://tweek.so/), built to practice React development and production engineering practices.
 
-<!-- ## ⚡ Quick Start
-
-```bash
-# One-liner to get running
-docker run -p 3000:3000 nnay29/tilpad
-``` -->
 
 ## 🎯 Purpose
 
