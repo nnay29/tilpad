@@ -1,4 +1,6 @@
 {
+  
+  "include": ["src", "src/declarations.d.ts"],
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
 
@@ -11,6 +13,7 @@
     "allowJs": true,           // VERY IMPORTANT: Allows you to keep .js files
     "checkJs": false,          // Stops TS from complaining about errors in old .js files
     "noEmit": true,            // Your bundler (Vite/Webpack) handles the output
+
 
     
     // Environment Settings
