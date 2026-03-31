@@ -1,7 +1,7 @@
-import TaskCard from './components/TaskCard'
-import UpperPart from './components/UpperPart'
-import './App.css'
-import TaskCardBlock from './components/TaskCardBlock'
+import TaskCard from './components/TaskCard.jsx'
+import UpperPart from './components/UpperPart.jsx'
+
+import TaskCardBlock from './components/TaskCardBlock.jsx'
 import { useState } from 'react'
 
 import dayjs from 'dayjs';
